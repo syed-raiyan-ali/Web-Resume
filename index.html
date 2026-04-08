@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link id="dynamic-favicon" rel="icon" href="/g-suitcase.png" type="image/png">
+  <script>
+    (function () {
+      const favicon = document.getElementById('dynamic-favicon');
+      const updateFavicon = (e) => {
+        try {
+          const isDark = e ? e.matches : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          favicon.href = isDark ? '/w-suitcase.png' : '/b-suitcase.png';
+        } catch (err) {
+          favicon.href = '/g-suitcase.png';
+        }
+      };
+
+      const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      if (darkModeMediaQuery.addEventListener) {
+        darkModeMediaQuery.addEventListener('change', updateFavicon);
+      } else if (darkModeMediaQuery.addListener) { // Fallback for older browsers
+        darkModeMediaQuery.addListener(updateFavicon);
+      }
+      updateFavicon();
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Resume</title>
+  <meta name="description"
+    content="Syed Raiyan Ali - Interactive Web Resume & Graphic Design Portfolio. High performance React and Firebase responsive development." />
+  <meta name="keywords"
+    content="Syed Raiyan Ali, Ruhen Rai, Web Resume, Graphic Design Portfolio, BCA, Graphic Designer, Frontend Developer, React, Portfolio" />
+  <meta name="author" content="Syed Raiyan Ali" />
+  <link rel="canonical" href="https://syedraiyanali.vercel.app/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://syedraiyanali.vercel.app/" />
+  <meta property="og:title" content="Web Resume | Syed Raiyan Ali" />
+  <meta property="og:description" content="Interactive 3D Web Resume showcasing development projects, language proficiencies, and digital UI tracking." />
+  <meta property="og:image" content="https://syedraiyanali.vercel.app/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://syedraiyanali.vercel.app/" />
+  <meta property="twitter:title" content="Web Resume | Syed Raiyan Ali" />
+  <meta property="twitter:description" content="Interactive 3D Web Resume showcasing development projects, language proficiencies, and digital UI tracking." />
+  <meta property="twitter:image" content="https://syedraiyanali.vercel.app/og-image.jpg" />
+
+  <!-- Structured Data (Person Schema) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Syed Raiyan Ali",
+      "jobTitle": "Graphic Designer & React Developer",
+      "url": "https://syedraiyanali.vercel.app/",
+      "sameAs": [
+        "https://github.com/syed-raiyan-ali"
+      ],
+      "description": "A professional, interactive, and responsive online resume highlighting core software engineering and design skill sets."
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

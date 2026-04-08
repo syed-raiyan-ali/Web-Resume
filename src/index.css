@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+:root {
+  font-family: 'Outfit', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  /* NEUTRAL LIGHT THEME */
+  --bg-light: #faf9f6;
+  --bg-soft: #f0ede6;
+  --text-main: #2d2d2d;
+  --text-muted: #5a5a5a;
+  --primary: #d97706;
+  /* Warm accent kept for buttons */
+  --secondary: #b45309;
+
+  --glass-panel-bg: rgba(255, 255, 255, 0.4);
+  --glass-panel-border: rgba(200, 200, 200, 0.3);
+  --glass-card-bg: #ffffff;
+  /* Highly opaque bg for items sitting on grid */
+  --glass-card-hover: #f9f9f9;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme="dark"] {
+  --bg-light: #0f0c08;
+  --bg-soft: #1c1710;
+  --text-main: #fcfcfc;
+  --text-muted: #a3a3a3;
+  --primary: #f59e0b;
+  --secondary: #fbbf24;
+
+  /* Slightly brighter greyish mask to make the grid pop in dark mode */
+  --glass-panel-bg: rgba(255, 255, 255, 0.08);
+  --glass-panel-border: rgba(255, 255, 255, 0.15);
+  --glass-card-bg: #16120c;
+  /* Restoring Opaque bg for text/cards */
+  --glass-card-hover: #1e1911;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide Spline watermark completely */
+div[style*="opacity: 0.1"],
+a[href*="spline.design"] {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Animations - Simplified for speed */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Custom Scrollbar (Though hidden with overflow:hidden generally) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+.navbar-logo {
+  font-family: "Playfair Display", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  user-select: none;
+}
+
+.navbar-logo span {
+  color: #d97706;
+  font-size: 3rem;
+  line-height: 0;
+  display: inline-block;
+  vertical-align: baseline;
+  position: relative;
+  top: 1px;
+}
+
+.navbar-logo:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,31 @@
+{
+  "futureSkills": [
+    {
+      "name": "Arabic Language (from Duolingo)",
+      "progress": 10,
+      "goal": 40,
+      "unit": "Score"
+    },
+    {
+      "name": "Indonesian Language (from Duolingo)",
+      "progress": 10,
+      "goal": 40,
+      "unit": "Score"
+    },
+    {
+      "name": "Electron JS",
+      "progress": 10,
+      "goal": 100,
+      "unit": "%"
+    }
+  ],
+  "futureProjects": [
+    {
+      "name": "Music Player with Electron JS",
+      "tech": "Electron JS, HTML, CSS",
+      "progress": 5,
+      "goal": 100,
+      "unit": "%"
+    }
+  ]
+}
