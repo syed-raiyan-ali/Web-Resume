@@ -1,7 +1,13 @@
 # Interactive Web Resume (Personal Portfolio)
 
+[![Firebase Hosting](https://img.shields.io/badge/Hosted_on-Firebase-ffca28?logo=firebase&logoColor=white)](https://web-resume16.web.app/)
+
 ## 📝 Project Overview
-To design and develop a professional, interactive, and responsive online resume that effectively highlights personal skills, experience, and portfolio projects, offering an engaging user experience across all devices.
+Syed Raiyan Ali's Web Resume is an immersive, 3D digital environment designed to bridge the gap between technical engineering and professional graphic design. Engineered with a focus on motion and sub-second performance, it features a glassmorphic design system and state-driven 3D interactive scenes.
+
+[**🚀 View Live Demo**](https://web-resume16.web.app/)
+
+---
 
 ## 🛠️ Tools and Technologies Used
 - **HTML5**: For structuring the content of the resume.
@@ -9,9 +15,8 @@ To design and develop a professional, interactive, and responsive online resume 
 - **JavaScript (ES6+)**: For adding interactivity and dynamic content.
 - **React.js**: To build a modular and reusable component-based architecture.
 - **Vite**: Frontend tooling for fast development and building.
-- **Hosting Platform**: Vercel, for seamless deployment and hosting.
+- **Hosting Platform**: Firebase, for seamless deployment and hosting.
 - **Fake API Integration**: Simulates data fetching for dynamic content and portfolio showcases.
-- **Vercel JSON Configuration**: Custom headers for performance optimization (Content-Encoding: gzip).
 - **Schema Markup (JSON-LD)**: Added Structured Data (Person Schema) for better SEO representation on search engines.
 - **Open Graph Tags**: For better social media link previews when sharing the website.
 - **Canonical URL Tag**: Helps avoid duplicate content issues and improve SEO.
