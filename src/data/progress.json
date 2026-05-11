@@ -17,12 +17,25 @@
       "progress": 10,
       "goal": 100,
       "unit": "%"
+    },
+    {
+      "name": "C and C++",
+      "progress": 10,
+      "goal": 100,
+      "unit": "%"
     }
   ],
   "futureProjects": [
     {
       "name": "Music Player with Electron JS",
-      "tech": "Electron JS, HTML, CSS",
+      "tech": "Electron JS, HTML, CSS, React",
+      "progress": 30,
+      "goal": 100,
+      "unit": "%"
+    },
+    {
+      "name": "A Real-time E2EE Web Messenger",
+      "tech": "React, Tailwind CSS, Node.js, Express.js, Socket.io, PostgreSQL, Libsodium",
       "progress": 5,
       "goal": 100,
       "unit": "%"

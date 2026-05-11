@@ -15,9 +15,9 @@ export default defineConfig({
   ],
   build: {
     // We turn sourcemaps off for the final build to save space
-    sourcemap: false, 
+    sourcemap: false,
     // This helps manage large assets like your GIFs
-    chunkSizeWarningLimit: 2000, 
+    chunkSizeWarningLimit: 2000,
     rollupOptions: {
       output: {
         // This organizes your dist folder better
