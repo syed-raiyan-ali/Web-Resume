@@ -2,25 +2,25 @@
   "futureSkills": [
     {
       "name": "Arabic Language (from Duolingo)",
-      "progress": 10,
-      "goal": 40,
+      "progress": 8,
+      "goal": 30,
       "unit": "Score"
     },
     {
       "name": "Indonesian Language (from Duolingo)",
-      "progress": 10,
-      "goal": 40,
+      "progress": 8,
+      "goal": 30,
       "unit": "Score"
     },
     {
       "name": "Electron JS",
-      "progress": 10,
+      "progress": 40,
       "goal": 100,
       "unit": "%"
     },
     {
       "name": "C and C++",
-      "progress": 10,
+      "progress": 30,
       "goal": 100,
       "unit": "%"
     }
@@ -28,15 +28,15 @@
   "futureProjects": [
     {
       "name": "Music Player with Electron JS",
-      "tech": "Electron JS, HTML, CSS, React",
-      "progress": 30,
+      "tech": "Electron JS, HTML, CSS, React, apmlitude JS",
+      "progress": 35,
       "goal": 100,
       "unit": "%"
     },
     {
       "name": "A Real-time E2EE Web Messenger",
       "tech": "React, Tailwind CSS, Node.js, Express.js, Socket.io, PostgreSQL, Libsodium",
-      "progress": 5,
+      "progress": 10,
       "goal": 100,
       "unit": "%"
     }
